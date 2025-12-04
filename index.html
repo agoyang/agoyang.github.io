@@ -1,72 +1,289 @@
-<meta name="description" content="Wenjie Yang&#39;s home page">
-<link rel="stylesheet" href="jemdoc.css" type="text/css">
-<title>Wenjie Yang's Homepage</title>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wenjie Yang's Academic Homepage - Fudan University">
+    <title>Wenjie Yang | Fudan University</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px; /* Limits width for better readability */
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        /* Links */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section (Bio + Photo) */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .header-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            margin-top: 0;
+            color: #111;
+        }
+
+        .affiliation {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+        }
+
+        /* Profile Image */
+        .profile-img-container {
+            flex-shrink: 0;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: auto;
+            border-radius: 8px; /* Slight rounded corners */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        /* Publications List */
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+
+        ul.pub-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul.pub-list li {
+            margin-bottom: 20px; /* Increased spacing for readability */
+            padding-left: 20px;
+            text-indent: -20px; /* Hanging indent for academic style */
+        }
+
+        .paper-desc {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        /* Highlight own name */
+        .me {
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 0.85em;
+            color: #888;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column-reverse; /* Puts image on top on mobile */
+                align-items: center;
+                text-align: center;
+            }
+
+            .header-content {
+                padding-right: 0;
+                margin-top: 20px;
+            }
+
+            .profile-img {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
 
 <body>
-<div id="layout-content" style="margin-top:25px">
-<table>
-    <tbody>
-        <tr>
-            <td width="670">
-                <div id="toptitle">
-                    <h1>Wenjie Yang</h1>
-                </div>
-                <!-- <h3>Graduate Student</h3> -->
-                <p>
-                    School of Data Science<br>
-                    Fudan University <br>
-                    Shanghai, China. 200433.<br>
+
+    <header>
+        <div class="header-content">
+            <h1>Wenjie Yang</h1>
+            <div class="affiliation">
+                School of Data Science<br>
+                Fudan University<br>
+                Shanghai, China. 200433.
+            </div>
+            <div class="contact-info">
+                Email: <a href="mailto:yangwj24@m.fudan.edu.cn">yangwj24@m.fudan.edu.cn</a>
+            </div>
+        </div>
+        <div class="profile-img-container">
+            <!-- Ensure your image is named ywj.jpg and is in the same folder -->
+            <img src="./ywj.jpg" alt="Wenjie Yang" class="profile-img" onerror="this.style.display='none'">
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a second-year PhD student in the School of Data Science at Fudan University. 
+                Before transferring to the PhD program, I spent two years in the MS program. 
+                I am fortunate to be advised by Prof. <a href="https://zengfenghuang.github.io" target="_blank">Zengfeng Huang</a>. 
+                I obtained my B.S. degree in Statistics from Donghua University in 2022.
+                <br><br>
+                
+                    I previously interned at Ant Group and Lilith Games. <span style="color: #d90000; font-weight: 500;">I am open to research collaboration with both academia and industry. If you are interested, please contact me via email.
+                </span>
+            </p>
+        </section>
+
+        <section id="preprints">
+            <h2>Preprints</h2>
+            <p class="note">Note: * indicates corresponding author, † indicates equal contribution.</p>
+            <ul class="pub-list">
+                <li>
+                    <span class="me">Wenjie Yang</span>, Zengfeng Huang*.
                     <br>
-                    Email: yangwj24@m.fudan.edu.cn
-                </p>
-            </td>
-            <td>
-                <img src="./ywj.jpg" border="0" width="150">
-            </td>
-        </tr>
-    </tbody>
-</table>
+                    <a href="https://arxiv.org/abs/2509.23746" target="_blank">Poivre: Self-Refining Visual Pointing with Reinforcement Learning</a>.
+                    <br>
+                    <i>arXiv preprint arXiv:2509.23746</i>, 2025.
+                    <span class="paper-desc">
+                        We incentivize self-refining for the task of visual pointing with RL, surpassing models like Gemini 2.5 Pro on PointBench.
+                    </span>
+                </li>
+            </ul>
+        </section>
 
+        <section id="publications">
+            <h2>Publications</h2>
+            <ul class="pub-list">
+                <!-- 2026 -->
+                <li>
+                    <span class="me">Wenjie Yang</span>, Shengzhong Zhang*, Chen Ye, Jiaxing Guo, Tongshan Xu, Zengfeng Huang*. 
+                    <br>
+                    <strong>Know Your Neighbors: Subgraph Importance Sampling for Heterophilic Graph Active Learning.</strong>
+                    <br>
+                    <i>AAAI</i>, 2026.
+                </li>
+                
+                <li>
+                    <span class="me">Wenjie Yang†</span>, Shengzhong Zhang†, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0893608025009839" target="_blank">Cross-level graph contrastive learning for community value prediction</a>.
+                    <br>
+                    <i>Neural Networks</i>, 2026.
+                </li>
 
-<h2>About Me</h2>
-<p>
-    I am a second-year PhD student in the School of Data Science, Fudan University. Before transferring to the PhD program, I spent two years in the MS program. I am fortunate to be advised by Prof. <a href="https://zengfenghuang.github.io">Zengfeng Huang</a>. I obtained my B.S. degree in Statistics from Donghua University in 2022.
-</p>
-        
+                <!-- 2025 -->
+                <li>
+                    <span class="me">Wenjie Yang†</span>, Shengzhong Zhang†, Jiaxing Guo, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://doi.org/10.1016/j.artint.2025.104439" target="_blank">Contra²: A One-step Active Learning Method for Imbalanced Graphs</a>.
+                    <br>
+                    <i>Artificial Intelligence</i>, 2025.
+                </li>
 
-<h2>Publications<small></small></h2>
-Note: * for corresponding author, † for equal contribution.
-<ul>
-    <li>
-            <b>Wenjie Yang</b>, Shengzhong Zhang*, Chen Ye, Jiaxing Guo, Tongshan Xu, Zengfeng Huang*. Know Your Neighbors: Subgraph Importance Sampling for Heterophilic Graph Active Learning. <i>AAAI</i>, 2026
-    </li>            
-    <li>
-        Shengzhong Zhang, <b>Wenjie Yang*</b>, Yimin Zhang, Hongwei Zhang, Zengfeng Huang*. Understanding Class Bias Amplification in Graph Representation Learning. <i>Transactions on Machine Learning Research</i>.
-    </li>
-    <li>
-            <b>Wenjie Yang†</b>, Shengzhong Zhang†, Jiaxing Guo, Zengfeng Huang*. <a href="https://doi.org/10.1016/j.artint.2025.104439">Contra&#178: A One-step Active Learning Method for Imbalanced
-Graphs</a>. <i>Artificial Intelligence</i>, 2025.
-    </li>
-        <li>
-            <b>Wenjie Yang</b>, Ruiyuan Huang, Jiaxing Guo, Zicheng Lyu, Tongshan Xu, Shengzhong Zhang, Lun Du, Da Zheng*, Zengfeng Huang*. <a href="https://aclanthology.org/2025.findings-emnlp.1162/">Retrieval-Augmented Language Models are Mimetic Theorem Provers</a>. <i>EMNLP Findings</i>, 2025.
-        </li>
-        <li>
-            <b>Wenjie Yang†</b>, Shengzhong Zhang†, Zengfeng Huang*. <a href="https://www.sciencedirect.com/science/article/pii/S0893608025009839">Cross-level graph contrastive learning for community value prediction</a>. <i>Neural Networks</i>, 2026.
-    </li>
-        <li>
-            <b>Wenjie Yang</b>, Shengzhong Zhang*, Jiaxing Guo, Zengfeng Huang*. <a href="https://arxiv.org/abs/2407.17723">Your Graph Recommenders are Provably Doing Graph Contrastive Learning</a>. <i>KDD</i>, 2025.
-    </li>
-        <li>
-            Shengzhong Zhang, Yimin Zhang, Bisheng Li, <b>Wenjie Yang</b>, Min Zhou, Zengfeng Huang*. <a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608024008608">Graph Batch Coarsening Framework for Scalable Graph Neural Networks</a>. <i>Neural Networks</i>, 2025.
-    </li>
-        <li>
-            Shengzhong Zhang, <b>Wenjie Yang</b>, Xinyuan Cao, Hongwei Zhang, Zengfeng Huang*. <a href="https://openreview.net/forum?id=a4DBEeGfQq">StructComp: Substituting Propagation with Structural Compression in Training Graph Contrastive Learning</a>. <i>ICLR</i>, 2024.
-    </li>
-    <li>
-   <b>Wenjie Yang†</b>, Shengzhong Zhang†, Zengfeng Huang*. <a href="https://ieeexplore.ieee.org/document/10448089">Enhancing Performance of Coarsened Graphs with Gradient-matching</a>. <i>ICASSP</i>, 2024.
-   </li>
-<div id="footer">
-    <div id="footer-text"></div>
-</div>
-</body></html>
+                <li>
+                    <span class="me">Wenjie Yang</span>, Ruiyuan Huang, Jiaxing Guo, Zicheng Lyu, Tongshan Xu, Shengzhong Zhang, Lun Du, Da Zheng*, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://aclanthology.org/2025.findings-emnlp.1162/" target="_blank">Retrieval-Augmented Language Models are Mimetic Theorem Provers</a>.
+                    <br>
+                    <i>EMNLP Findings</i>, 2025.
+                </li>
+
+                <li>
+                    <span class="me">Wenjie Yang</span>, Shengzhong Zhang*, Jiaxing Guo, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://arxiv.org/abs/2407.17723" target="_blank">Your Graph Recommenders are Provably Doing Graph Contrastive Learning</a>.
+                    <br>
+                    <i>KDD</i>, 2025.
+                </li>
+                
+                <li>
+                    Shengzhong Zhang, <span class="me">Wenjie Yang*</span>, Yimin Zhang, Hongwei Zhang, Zengfeng Huang*. 
+                    <br>
+                    <strong>Understanding Class Bias Amplification in Graph Representation Learning.</strong>
+                    <br>
+                    <i>Transactions on Machine Learning Research (TMLR)</i>, 2025.
+                </li>
+
+                <li>
+                    Shengzhong Zhang, Yimin Zhang, Bisheng Li, <span class="me">Wenjie Yang</span>, Min Zhou, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608024008608" target="_blank">Graph Batch Coarsening Framework for Scalable Graph Neural Networks</a>.
+                    <br>
+                    <i>Neural Networks</i>, 2025.
+                </li>
+
+                <!-- 2024 -->
+                <li>
+                    Shengzhong Zhang, <span class="me">Wenjie Yang</span>, Xinyuan Cao, Hongwei Zhang, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://openreview.net/forum?id=a4DBEeGfQq" target="_blank">StructComp: Substituting Propagation with Structural Compression in Training Graph Contrastive Learning</a>.
+                    <br>
+                    <i>ICLR</i>, 2024.
+                </li>
+
+                <li>
+                    <span class="me">Wenjie Yang†</span>, Shengzhong Zhang†, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://ieeexplore.ieee.org/document/10448089" target="_blank">Enhancing Performance of Coarsened Graphs with Gradient-matching</a>.
+                    <br>
+                    <i>ICASSP</i>, 2024.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> Wenjie Yang. Last updated: December 2025.
+    </footer>
+
+</body>
+</html>
