@@ -86,6 +86,15 @@
             color: #222;
         }
 
+        /* Subheadings for Topics */
+        h3 {
+            font-size: 1.2em;
+            color: #444;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
         /* Publications List */
         .note {
             font-size: 0.9em;
@@ -163,7 +172,6 @@
             </div>
         </div>
         <div class="profile-img-container">
-            <!-- Ensure your image is named ywj.jpg and is in the same folder -->
             <img src="./ywj.jpg" alt="Wenjie Yang" class="profile-img" onerror="this.style.display='none'">
         </div>
     </header>
@@ -183,9 +191,11 @@
             </p>
         </section>
 
-        <section id="preprints">
-            <h2>Preprints</h2>
+        <section id="publications">
+            <h2>Publications</h2>
             <p class="note">Note: * indicates corresponding author, † indicates equal contribution.</p>
+            
+            <h3>Multimodality</h3>
             <ul class="pub-list">
                 <li>
                     <span class="me">Wenjie Yang</span>, Zengfeng Huang*.
@@ -198,12 +208,28 @@
                     </span>
                 </li>
             </ul>
-        </section>
 
-        <section id="publications">
-            <h2>Publications</h2>
+            <h3>AI for math research</h3>
             <ul class="pub-list">
-                <!-- 2026 -->
+                <li>
+                    Jiaxing Guo, <span class="me">Wenjie Yang</span>, Shengzhong Zhang, Tongshan Xu, Lun Du, Da Zheng, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://arxiv.org/abs/2506.06877" target="_blank">Right Is Not Enough: The Pitfalls of Outcome Supervision in Training LLMs for Math Reasoning</a>.
+                    <br>
+                    <i>arXiv preprint arXiv:2506.06877</i>, 2025.
+                </li>
+                
+                <li>
+                    <span class="me">Wenjie Yang</span>, Ruiyuan Huang, Jiaxing Guo, Zicheng Lyu, Tongshan Xu, Shengzhong Zhang, Lun Du, Da Zheng*, Zengfeng Huang*. 
+                    <br>
+                    <a href="https://aclanthology.org/2025.findings-emnlp.1162/" target="_blank">Retrieval-Augmented Language Models are Mimetic Theorem Provers</a>.
+                    <br>
+                    <i>EMNLP Findings</i>, 2025.
+                </li>
+            </ul>
+
+            <h3>Graph machine learning</h3>
+            <ul class="pub-list">
                 <li>
                     <span class="me">Wenjie Yang</span>, Shengzhong Zhang*, Chen Ye, Jiaxing Guo, Tongshan Xu, Zengfeng Huang*. 
                     <br>
@@ -220,21 +246,12 @@
                     <i>Neural Networks</i>, 2026.
                 </li>
 
-                <!-- 2025 -->
                 <li>
                     <span class="me">Wenjie Yang†</span>, Shengzhong Zhang†, Jiaxing Guo, Zengfeng Huang*. 
                     <br>
                     <a href="https://doi.org/10.1016/j.artint.2025.104439" target="_blank">Contra²: A One-step Active Learning Method for Imbalanced Graphs</a>.
                     <br>
                     <i>Artificial Intelligence</i>, 2025.
-                </li>
-
-                <li>
-                    <span class="me">Wenjie Yang</span>, Ruiyuan Huang, Jiaxing Guo, Zicheng Lyu, Tongshan Xu, Shengzhong Zhang, Lun Du, Da Zheng*, Zengfeng Huang*. 
-                    <br>
-                    <a href="https://aclanthology.org/2025.findings-emnlp.1162/" target="_blank">Retrieval-Augmented Language Models are Mimetic Theorem Provers</a>.
-                    <br>
-                    <i>EMNLP Findings</i>, 2025.
                 </li>
 
                 <li>
@@ -261,7 +278,6 @@
                     <i>Neural Networks</i>, 2025.
                 </li>
 
-                <!-- 2024 -->
                 <li>
                     Shengzhong Zhang, <span class="me">Wenjie Yang</span>, Xinyuan Cao, Hongwei Zhang, Zengfeng Huang*. 
                     <br>
@@ -282,7 +298,7 @@
     </main>
 
     <footer>
-        &copy; <script>document.write(new Date().getFullYear())</script> Wenjie Yang. Last updated: December 2025.
+        &copy; <script>document.write(new Date().getFullYear())</script> Wenjie Yang. Last updated: January 2026.
     </footer>
 
 </body>
